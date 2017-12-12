@@ -9,3 +9,4 @@ module A =
 
     <@@ 1 + 10 / 5 @@>
     |> printfn "%A"
+
