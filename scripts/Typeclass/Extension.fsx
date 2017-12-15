@@ -9,7 +9,9 @@ type System.Boolean with
 type Stop = 
     | Stop
     with
-    static member Show(v: Stop) = "{Stop}"
+        static member Show(v: Stop) = 
+            printfn "{Stop}"
+            "{Stop}"
 
 type MyType<'A> = 
     | MyType of 'A
@@ -18,11 +20,6 @@ type MyType<'A> =
         match v with
         | MyType a -> sprintf "{MyType: %A}" (show a)
 
-//let p = show (MyType Stop)
-//let s = show (MyType (MyType Stop))
-
-//let a = show (true)
-//let b = show ("100")
+let p = show (MyType Stop)
+let s = show (MyType (MyType Stop))
 //let s = show (MyType (MyType "foo")) // error as extension methods are not picked up atm
-
-//p |> printfn "%A"
