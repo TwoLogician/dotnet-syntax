@@ -7,31 +7,34 @@ type CommandLineOptions = {
     OrderBy: string
 }
 
-let rec parseCommandLine args optionsSofar = 
+let rec parseCommandLineRec args optionsSofar = 
     match args with
     | [] ->
         optionsSofar
     | "/v" :: xs ->
         let newOptions = { optionsSofar with Verbose = true }
-        parseCommandLine xs newOptions
+        parseCommandLineRec xs newOptions
     | "/s" :: xs ->
         let newOptions = { optionsSofar with Subdirectories = true }
-        parseCommandLine xs newOptions
+        parseCommandLineRec xs newOptions
     | "/o" :: xs ->
         match xs with
         | "S" :: xss ->
             let newOptions = { optionsSofar with OrderBy = orderBySize}
-            parseCommandLine xss newOptions 
+            parseCommandLineRec xss newOptions 
         | "N" :: xss ->
             let newOptions = { optionsSofar with OrderBy = orderByName}
-            parseCommandLine xss newOptions 
+            parseCommandLineRec xss newOptions 
         | _ ->
             eprintfn "OrderBy needs a second argument"
-            parseCommandLine xs optionsSofar 
+            parseCommandLineRec xs optionsSofar 
     | x :: xs ->
         eprintfn "Option %s is unrecognized" x
-        parseCommandLine xs optionsSofar
+        parseCommandLineRec xs optionsSofar
 
-let options = parseCommandLine ["/v"; "/s"; "/o"; "N"] { Verbose = false; Subdirectories = false; OrderBy = orderByName }
+let parseCommandLine args = 
+    let def = { Verbose = false; Subdirectories = false; OrderBy = orderByName }
+    parseCommandLineRec args def
 
-options |> printfn "%A"
+parseCommandLine []
+|> printfn "%A"
