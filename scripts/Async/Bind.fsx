@@ -1,5 +1,3 @@
-open System.Runtime.Remoting.Messaging
-
 let getData() = async { 
     return 100
 }
@@ -17,12 +15,8 @@ async {
     return e
 }
 
-|> Async.RunSynchronously
+let (>>=) x f = async.Bind(x,f) 
+
+getData() >>= getMoreData >>= getMoreData >>= getMoreData  >>= getMoreData
+|> Async.RunSynchronously 
 |> printfn "%A"
-
-let bind f a = async.Bind (a, f)
-
-let (>>=) x f = bind f x
-
-getData() >>= getMoreData >>= getMoreData >>= getMoreData |> Async.RunSynchronously 
-
