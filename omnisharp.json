@@ -12,5 +12,7 @@
         "NewLineForElse": false,
         "NewLineForCatch": false,
         "NewLineForFinally": false
+    "script": {
+        "enableScriptNuGetReferences": true
     }
 }
