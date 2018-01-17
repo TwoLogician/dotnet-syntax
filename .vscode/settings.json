@@ -8,5 +8,12 @@
         ".paket": true,
         "paket-files": true,
         "packages": true
-    }
+    },
+    "simpleDownload": [
+        {
+            "name": "OmniSharp config",
+            "url": "",
+            "target": "omnisharp.json"
+        }
+    ]
 }
