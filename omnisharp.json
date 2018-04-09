@@ -11,8 +11,9 @@
         "NewLinesForBracesInAccessors": false,
         "NewLineForElse": false,
         "NewLineForCatch": false,
-        "NewLineForFinally": false
-    "script": {
-        "enableScriptNuGetReferences": true
+        "NewLineForFinally": false,
+        "script": {
+            "enableScriptNuGetReferences": true
+        }
     }
 }
