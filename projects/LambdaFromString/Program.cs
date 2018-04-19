@@ -14,6 +14,8 @@ public class Album {
 class Program {
     static async Task Main(string[] args) {
 
+        Test.Size();
+
         var albums = new List<Album> {
                 new Album { Quantity = 10, Artist = "Betontod", Title = "Revolution" },
                 new Album { Quantity = 50, Artist = "The Dangerous Summer", Title = "The Dangerous Summer" },

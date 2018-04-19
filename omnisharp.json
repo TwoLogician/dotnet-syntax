@@ -1,4 +1,7 @@
 {
+    "buildOptions": {
+        "allowUnsafe": true
+    },
     "FormattingOptions": {
         "NewLinesForBracesInLambdaExpressionBody": false,
         "NewLinesForBracesInAnonymousMethods": false,
