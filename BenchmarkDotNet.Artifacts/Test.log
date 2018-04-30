@@ -1,0 +1,8 @@
+// ***** BenchmarkRunner: Start   *****
+// Found benchmarks:
+//   Test.Take: DefaultJob
+//   Test.Slice: DefaultJob
+
+// Validating benchmarks:
+// ***** Building 2 benchmark(s) in Parallel: Start   *****
+// * Artifacts cleanup *
