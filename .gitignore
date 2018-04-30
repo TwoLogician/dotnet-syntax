@@ -6,3 +6,4 @@ temp
 .paket
 paket-files
 packages
+BenchmarkDotNet.Artifacts
