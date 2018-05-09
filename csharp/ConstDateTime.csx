@@ -11,6 +11,10 @@ void Check<T>(ref T a, ref T b) {
     Console.WriteLine(rs);
 }
 
+struct KK {
+    int a;
+}
+
 Console.WriteLine(object.ReferenceEquals(App.B, App.B));
 Console.WriteLine(object.ReferenceEquals(App.I, App.I));
 Console.WriteLine(object.ReferenceEquals(App.S, App.S));
