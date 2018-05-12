@@ -1,7 +1,4 @@
 {
-    "buildOptions": {
-        "allowUnsafe": true
-    },
     "FormattingOptions": {
         "NewLinesForBracesInLambdaExpressionBody": false,
         "NewLinesForBracesInAnonymousMethods": false,
@@ -14,9 +11,9 @@
         "NewLinesForBracesInAccessors": false,
         "NewLineForElse": false,
         "NewLineForCatch": false,
-        "NewLineForFinally": false,
-        "script": {
-            "enableScriptNuGetReferences": true
-        }
+        "NewLineForFinally": false
+    },
+    "script": {
+        "enableScriptNuGetReferences": true
     }
 }
