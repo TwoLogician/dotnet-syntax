@@ -1,5 +1,5 @@
-#! "netcoreapp2.1"
-#r "nuget:BenchmarkDotNet, 0.10.12"
+#! "netcoreapp2.0"
+#r "nuget:BenchmarkDotNet, 0.10.14"
 
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
