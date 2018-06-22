@@ -14,6 +14,7 @@
         "NewLineForFinally": false
     },
     "script": {
-        "enableScriptNuGetReferences": true
+        "enableScriptNuGetReferences": true,
+        "defaultTargetFramework": "netcoreapp2.1"
     }
 }

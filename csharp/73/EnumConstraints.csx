@@ -1,5 +1,3 @@
-
-
 public static E[] GetValues<E>() where E : System.Enum =>
      Enum.GetValues(typeof(E)) as E[];
 

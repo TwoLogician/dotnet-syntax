@@ -3,16 +3,16 @@
 
 void F1(object o) {
     if ((o is string s) == false) {
-        Console.WriteLine(s);   // Use of unassigned local variable 's'
+        //Console.WriteLine(s);   // Use of unassigned local variable 's'
     }
-    Console.WriteLine(s);
+    //Console.WriteLine(s);
 }
 
 void F2(object o) {
     if (o is string s) {
         Console.WriteLine(s);
     }
-    Console.WriteLine(s);       // Use of unassigned local variable 's'
+    // Console.WriteLine(s);       // Use of unassigned local variable 's'
 }
 
 
