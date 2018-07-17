@@ -18,7 +18,7 @@ public class Test {
 
     [Benchmark]
     public void Slice() {
-        var span = new Span<int>(values, 0);
+        var span = values.AsSpan();
         var a = span.Slice(5, span.Length - 5).Length;
     }
 }
