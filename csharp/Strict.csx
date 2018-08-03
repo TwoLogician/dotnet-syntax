@@ -1,3 +1,6 @@
+// https://github.com/dotnet/roslyn/search?utf8=%E2%9C%93&q=FeatureStrictEnabled&type=
+
+
 // 1
 lock (null) { }
 
