@@ -3,6 +3,7 @@
 namespace NullReference {
     class Program {
         static void A(string? s) {
+            string k = null;
             s = null;
         }
 
