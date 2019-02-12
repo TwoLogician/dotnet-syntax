@@ -1,5 +1,5 @@
 {
-    "FSharp.fsacRuntime": "net",
+    "FSharp.fsacRuntime": "netcore",
     "omnisharp.path": "latest",
     "files.exclude": {
         "**/.git": true,
