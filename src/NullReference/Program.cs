@@ -4,7 +4,7 @@ namespace NullReference {
     class Program {
         static void A(string? s) {
             string k = null;
-            s = null;
+            k = null;
         }
 
         static void B(string s) {
