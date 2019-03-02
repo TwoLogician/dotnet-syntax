@@ -2,7 +2,7 @@ using System;
 
 namespace Features {
     class FRange {
-        static void Range1() {
+        public static void Range1() {
             var array = new string[] {
                 "Item1",
                 "Item2",
