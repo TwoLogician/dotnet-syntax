@@ -13,7 +13,7 @@ namespace C80NullableReferenceType {
         }
 
         static void Main(string[] args) {
-            string s = "Hello";
+            string s = "";
             var length = Length(s);
         }
     }

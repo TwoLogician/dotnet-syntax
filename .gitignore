@@ -3,6 +3,7 @@ obj
 .DS_Store
 packages
 temp
+tools
 .paket
 paket-files
 packages

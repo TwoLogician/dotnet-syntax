@@ -2,6 +2,7 @@
     "FSharp.fsacRuntime": "netcore",
     "omnisharp.path": "latest",
     "files.exclude": {
+        "tools": true,
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
