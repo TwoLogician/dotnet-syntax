@@ -6,8 +6,10 @@ using System.Linq;
 namespace DynamicToDictionary {
     static class DynamicExtensions {
         public static IDictionary<string, Object> ToDictionary(this object obj) {
-            var dict = TypeDescriptor.GetProperties(obj.GetType())
-                .OfType<PropertyDescriptor>().ToDictionary(p => p.Name, p => p.GetValue(obj));
+            var dict = TypeDescriptor
+                .GetProperties(obj.GetType())
+                .OfType<PropertyDescriptor>()
+                .ToDictionary(p => p.Name, p => p.GetValue(obj));
             return dict;
         }
 
