@@ -1,6 +1,8 @@
 name: dotnet
+on: push
 
 jobs:
   build:
-    - name: hello
-      run: echo Hello, world!
+    steps:
+      - name: hello
+        run: echo Hello, world!
