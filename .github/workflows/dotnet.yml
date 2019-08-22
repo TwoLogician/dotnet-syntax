@@ -1,0 +1,6 @@
+name: dotnet
+
+jobs:
+  build:
+    - name: hello
+      run: echo Hello, world!

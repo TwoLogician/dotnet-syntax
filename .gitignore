@@ -8,3 +8,5 @@ tools
 paket-files
 packages
 BenchmarkDotNet.Artifacts
+
+.ionide
