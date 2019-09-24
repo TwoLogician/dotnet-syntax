@@ -1,0 +1,17 @@
+{
+  "isRoot": true,
+  "tools": {
+    "dotnetsay": {
+      "version": "2.1.4",
+      "commands": [
+        "dotnetsay"
+      ]
+    },
+    "wk.ipaddress": {
+      "version": "0.1.0",
+      "commands": [
+        "wk-ip-address"
+      ]
+    }
+  }
+}

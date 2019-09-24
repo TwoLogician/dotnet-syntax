@@ -1,33 +1,32 @@
 ## .NET Core 3.0
 
-*Trim*
+*Assembly linking*
 
 ```bash
+# link
 dotnet publish -r osx-x64 -c Release core/30x/C30AssemblyLinking
-```
 
-*Single file*
-
-```bash
+# single file
 dotnet publish -r osx-x64 -c Release /p:PublishSingleFile=true core/30x/C30AssemblyLinking
-```
 
-*List*
-
-```
+# list
 ls core/30x/C30AssemblyLinking/bin/Release/netcoreapp3.0/osx-x64
 ls core/30x/C30AssemblyLinking/bin/Release/netcoreapp3.0/osx-x64/publish
+
+# clean
 rm -rf core/30x/C30AssemblyLinking/bin/Release/netcoreapp3.0/osx-x64/publish
+dotnet clean -r osx-x64 -c Release core/30x/C30AssemblyLinking
+
+# execute
+./core/30x/C30AssemblyLinking/bin/Release/netcoreapp3.0/osx-x64/publish/C30AssemblyLinking
 ```
 
-*Clean*
+*Local tools*
 
 ```bash
-dotnet clean -r osx-x64 -c Release core/30x/C30AssemblyLinking
-```
+dotnet tool restore
+dotnet dotnetsay
+dotnet tool run dotnetsay
 
-*Execute*
-
-```
-./core/30x/C30AssemblyLinking/bin/Release/netcoreapp3.0/osx-x64/publish/C30AssemblyLinking
+dotnet tool install wk.IpAddress
 ```
