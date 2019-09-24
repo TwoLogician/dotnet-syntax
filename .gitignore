@@ -10,3 +10,4 @@ packages
 BenchmarkDotNet.Artifacts
 
 .ionide
+TestResults

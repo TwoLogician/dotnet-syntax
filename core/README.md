@@ -1,5 +1,13 @@
 ## .NET Core 3.0
 
+*Test*
+
+```bash
+dotnet test core/30x/C30Tests/C30Tests.csproj
+dotnet test --logger:"html;LogFileName=TestResults.html" core/30x/C30Tests/C30Tests.csproj
+dotnet test --logger:"trx;LogFileName=TestResults.trx"   core/30x/C30Tests/C30Tests.csproj
+```
+
 *Assembly linking*
 
 ```bash
