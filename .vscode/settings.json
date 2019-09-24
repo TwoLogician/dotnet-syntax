@@ -12,6 +12,10 @@
         "**/obj": true,
         ".paket": true,
         "paket-files": true,
-        "packages": true
+        "packages": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     }
 }
