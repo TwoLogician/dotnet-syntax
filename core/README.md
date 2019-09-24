@@ -25,8 +25,10 @@ dotnet clean -r osx-x64 -c Release core/30x/C30AssemblyLinking
 
 ```bash
 dotnet tool restore
+
 dotnet dotnetsay
 dotnet tool run dotnetsay
 
 dotnet tool install wk.IpAddress
+dotnet tool run wk-ip-address
 ```
