@@ -9,9 +9,12 @@
         "NewLinesForBracesInProperties": false,
         "NewLinesForBracesInObjectCollectionArrayInitializers": false,
         "NewLinesForBracesInAccessors": false,
-        "NewLineForElse": false,
         "NewLineForCatch": false,
-        "NewLineForFinally": false
+        "NewLineForClausesInQuery": false,
+        "NewLineForElse": false,
+        "NewLineForFinally": false,
+        "NewLineForMembersInAnonymousTypes": false,
+        "NewLineForMembersInObjectInit": false
     },
     "script": {
         "enableScriptNuGetReferences": true
