@@ -20,7 +20,7 @@ namespace C80PropertyPattern {
             var p2 = Compute(new Address { State = "WA", Country = "Thailand" }, 10);
 
             Console.WriteLine(p1);
-            Console.WriteLine(p2)
+            Console.WriteLine(p2);
         }
     }
 }
