@@ -27,9 +27,20 @@ namespace C80SwitchExpression {
 
         }
 
+        static string C(Person p) {
+            var text2 = p switch
+            {
+                { Name: "wk" } => "A",
+                _ => "?"
+            };
+            return text2;
+        }
+
         static void Main(string[] args) {
             var a = B(null);
+            var c = C(new Person { Name = "wk" });
             Console.WriteLine(a);
+            Console.WriteLine(c);
         }
     }
 }
