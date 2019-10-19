@@ -1,8 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.Json;
+
 
 namespace C80Indices {
     class Program {
-        static void Main(string[] args) {
+        static string ToString(object obj) => JsonSerializer.Serialize(obj);
+
+        static void A() {
             var data = new string[] {
                 "1",
                 "2"
@@ -10,6 +16,29 @@ namespace C80Indices {
 
             var x = data[^1];
             Console.WriteLine(x);
+        }
+
+        static void B() {
+            var str = "Hello, world!";
+            var index = 0..^1;
+            var sub = str[index];
+            Console.WriteLine(sub);
+        }
+
+        static void C() {
+            var str = "Hello, world!";
+            var sub = str[1..^1];
+            Console.WriteLine(ToString(sub));
+        }
+
+        static void D() {
+            var a = new List<int> { 1, 2, 3, 4 }.ToArray();
+            var sub = a[0..^1];
+            Console.WriteLine(ToString(sub));
+        }
+
+        static void Main(string[] args) {
+            D();
         }
     }
 }
