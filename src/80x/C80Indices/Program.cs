@@ -37,6 +37,7 @@ namespace C80Indices {
             Console.WriteLine(ToString(sub));
         }
 
+        // TODO: step operator
         static void E() {
             // var a = 1..10:2;
             var a = new[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -46,8 +47,17 @@ namespace C80Indices {
             }
         }
 
+        // TODO: in operator
+        public void F() {
+            var az = 'a'..'z';
+            if ('b' in az) {
+                Console.WriteLine("Ok...");
+            }
+
+        }
+
         static void Main(string[] args) {
-            E();
+            F();
         }
     }
 }
