@@ -37,8 +37,17 @@ namespace C80Indices {
             Console.WriteLine(ToString(sub));
         }
 
+        static void E() {
+            // var a = 1..10:2;
+            var a = new[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            var sub = a[0..8];
+            foreach (var item in sub) {
+                Console.WriteLine(item);
+            }
+        }
+
         static void Main(string[] args) {
-            D();
+            E();
         }
     }
 }
