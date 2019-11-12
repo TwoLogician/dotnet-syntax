@@ -7,3 +7,10 @@ if (list?.Any() == false) {
 } else {
     Console.WriteLine("2. Doing ...");
 }
+
+
+if (null == true) {
+    Console.WriteLine("null == true");
+} else if (null == false) {
+    Console.WriteLine("null == false");
+}

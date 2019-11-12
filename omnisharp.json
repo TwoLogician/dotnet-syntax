@@ -17,6 +17,7 @@
         "NewLineForMembersInObjectInit": false
     },
     "script": {
-        "enableScriptNuGetReferences": true
+        "enableScriptNuGetReferences": true,
+        "defaultTargetFramework": "netcoreapp3.0"
     }
 }
