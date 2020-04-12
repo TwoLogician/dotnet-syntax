@@ -11,3 +11,4 @@ BenchmarkDotNet.Artifacts
 
 .ionide
 TestResults
+.fake
