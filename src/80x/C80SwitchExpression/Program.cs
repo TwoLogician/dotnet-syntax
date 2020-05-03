@@ -36,7 +36,7 @@ namespace C80SwitchExpression {
             return text2;
         }
 
-        static string F() {
+        static string D() {
             var a = 1;
             return a switch
             {
