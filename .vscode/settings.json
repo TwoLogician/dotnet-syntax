@@ -1,6 +1,8 @@
 {
-    "FSharp.fsacRuntime": "netcore",
-    "omnisharp.path": "latest",
+    "omnisharp.enableRoslynAnalyzers": true,
+    "omnisharp.enableEditorConfigSupport": true,
+    // "FSharp.fsacRuntime": "netcore",
+    // "omnisharp.path": "latest",
     "files.exclude": {
         "tools": true,
         "**/.git": true,
