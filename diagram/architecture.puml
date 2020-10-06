@@ -1,0 +1,16 @@
+@startuml
+
+' https://github.com/wk-j/plant-icons/blob/master/markdown/Azure.md
+
+!include vendor/azure.puml
+!include config.puml
+
+skinparam defaultTextAlignment center
+left to right direction
+
+AzureBatchAI(a,a, "")
+AzureBatchAI(b,b, "")
+
+a --> b
+
+@enduml
