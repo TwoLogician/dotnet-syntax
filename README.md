@@ -1,6 +1,4 @@
-## .🅽🅴🆃 Syntax
-
-[![Actions](https://github.com/wk-j/dotnet-syntax/workflows/Build/badge.svg)](https://github.com/wk-j/dotnet-syntax/actions)
+## .NET [![Actions](https://github.com/wk-j/dotnet-syntax/workflows/Build/badge.svg)](https://github.com/wk-j/dotnet-syntax/actions)
 
 ![](resource/diagram/architecture.png)
 
