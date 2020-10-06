@@ -1,9 +1,18 @@
-name: dotnet
+name: Build
 on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: hello
-        run: echo Hello, world!
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "v5.0.100-rc.1"
+
+      - name: Build
+        run: |
+          dotnet build src/90x/InitOnly/InitOnly.csproj
+          dotnet build src/90x/NewExpression/NewExpression.csproj
+          dotnet build src/90x/PatternMatching/PatternMatching.csproj
+          dotnet build src/90x/Records/Records.csproj
+          dotnet build src/90x/TopLevelStatements/TopLevelStatements.csproj
