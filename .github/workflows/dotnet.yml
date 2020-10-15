@@ -11,8 +11,8 @@ jobs:
 
       - name: Build
         run: |
-          dotnet build src/90x/InitOnly/InitOnly.csproj
-          dotnet build src/90x/NewExpression/NewExpression.csproj
-          dotnet build src/90x/PatternMatching/PatternMatching.csproj
-          dotnet build src/90x/Records/Records.csproj
-          dotnet build src/90x/TopLevelStatements/TopLevelStatements.csproj
+          dotnet build src/90x/InitOnly
+          dotnet build src/90x/NewExpression
+          dotnet build src/90x/PatternMatching
+          dotnet build src/90x/Records
+          dotnet build src/90x/TopLevelStatements
